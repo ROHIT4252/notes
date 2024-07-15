@@ -2,6 +2,7 @@
     margin:0;
     padding:0;
     font-family:'poppins','sans-serif';
+    box-sizing;border-box;
 
 }
 .container{
@@ -71,7 +72,7 @@ ul li{
     border:2px solid rgb(136, 153, 59);
     max-width:400px;
     min-height:55px;
-    max-height:600px;
+    max-height:60000000px;
 }
 ul li::before{
     content:'';
