@@ -1,0 +1,111 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'poppins','sans-serif';
+
+}
+.container{
+    width:100%;
+    min-height:100vh;
+    background:linear-gradient(1500deg,rgb(26, 17, 158),rgb(133, 43, 43));/*(135deg,#153677,#4e085f);*/
+    padding:1rem;
+    
+}
+.todo-app{
+    
+    max-width:35rem;
+    
+    background:#fff;
+    margin: 9rem auto 2rem;
+    padding:4rem 2rem 8rem;
+    border-radius:2rem;
+}
+.todo-app h2{
+    color:#002765;
+    display:flex;
+    align-items:center;
+    margin-bottom:1rem;
+}
+.todo-app h2 img{
+    width:1.5rem;
+    margin-left:1.2rem;
+
+}
+.row{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    border-radius:3rem;
+    padding-left:2rem;
+    margin-bottom:2rem;
+    background:#edeef0;
+
+}
+input{
+    flex:1;
+    border:none;
+    outline:none;
+    background:transparent;
+    font-weight:8rem;
+  
+    
+}
+button{
+    border:none;
+    outline:none;
+    padding:1.2rem 2rem;
+    background:#ff5945;
+    color:#fff;
+    font-size:1.2rem;
+    cursor:pointer;
+    border-radius:2rem;
+
+}
+ul li{
+    list-style:none;
+    font-size:17px;
+    padding:12px 8px 12px 50px;
+    user-select:none;
+    cursor:pointer;
+    position:relative;
+    border:2px solid rgb(136, 153, 59);
+    max-width:400px;
+    min-height:55px;
+    max-height:600px;
+}
+ul li::before{
+    content:'';
+    position:absolute;
+    height:28px;
+    width:28px;
+    border-radius:50%;
+    background-image:url(shirt.jpg);
+    background-size:cover;
+    background-position:center;
+    top:12px;
+    left:8px;
+}
+.cheked{
+    color:#555;
+    text-decoration:line-through;
+}
+ul li.cheked::before{
+
+ background-image:url(p.jpg);
+}
+ul li span{
+    position:absolute;
+    right:0;
+    top:5px;
+    width:40px;
+    height:40px;
+    font-size:22px;
+    color:#555;
+    line-height:40px;
+    text-align:center;
+    border-radius:50%;
+}
+ul li span:hover{
+    background:#5a80cc;
+}
